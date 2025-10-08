@@ -6,7 +6,7 @@
 	--dark-white: rgba(255, 255, 255, 0.13);
 	--light-black: #141d28;
 	--dark-blue: #233142;
-	--header-bg: #0C1117;
+	--header-bg: #0c1117;
 }
 
 * {
@@ -33,6 +33,41 @@ body {
 	line-height: 1.5;
 	letter-spacing: 0%;
 	color: var(--white-color);
+	background-color: var(--dark-blue);
+}
+
+.btn {
+font-family: var(--title-fontFamily);
+font-weight: 400;
+font-size: 16px;
+line-height: 1;
+letter-spacing: 0%;
+border: 2px solid transparent;
+color: var(--white-color);
+background-color: var(--light-blue);
+padding: 17px 37px;
+border-radius: 35px;
+transition: all 0.4s ease;
+}
+
+.btn:hover{
+	border: 2px solid var(--light-blue);
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btn:active{
+opacity: 0.6;
+}
+
+.btn-active {
+	margin-left: 14px;
+	background-color: transparent;
+	border: 2px solid var(--light-blue);
+}
+
+.btn-active:hover {
+background-color:var(--light-blue);
 }
 
 .container {
@@ -65,41 +100,41 @@ body {
 	font-size: 15px;
 	line-height: 2;
 	letter-spacing: 0%;
-  transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
 
 .site-header__tellNumber:hover {
 	color: aqua;
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .site-header__tellNumber:active {
-opacity: 0.6;
+	opacity: 0.6;
 }
 
 .site-header__social {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .site-header__social-item:not(:last-child) {
-margin-right: 16px;
+	margin-right: 16px;
 }
 
 .site-header__social-link svg {
 	color: var(--white-color);
-  width: 24px;
-  height: 24px;
-  transition: all 0.4s ease;
+	width: 24px;
+	height: 24px;
+	transition: all 0.4s ease;
 }
 
-.site-header__social-link svg:hover{
-  color: var(--light-blue);
-  transform: scale(1.2);
+.site-header__social-link svg:hover {
+	color: var(--light-blue);
+	transform: scale(1.2);
 }
 
-.site-header__social-link svg:active{
-  opacity: 0.6;
+.site-header__social-link svg:active {
+	opacity: 0.6;
 }
 
 .site-header__bottom {
@@ -109,8 +144,8 @@ margin-right: 16px;
 }
 
 .site-header_container {
-display: flex;
-align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .site-logo {
@@ -119,18 +154,17 @@ align-items: center;
 	display: flex;
 }
 
-.site-logo:hover{
+.site-logo:hover {
 	transform: scale(1.1);
 }
 
-.site-logo:active{
+.site-logo:active {
 	opacity: 0.6;
 }
 
 .site-header__list {
-display: flex;
-align-items: center;
-
+	display: flex;
+	align-items: center;
 }
 
 .site-header__item:not(:last-child) {
@@ -138,13 +172,13 @@ align-items: center;
 }
 
 .site-header__link {
-font-weight: 400;
-font-size: 15px;
-line-height: 0.99;
-letter-spacing: 0.8px;
-color: var(--white-color);
-padding-bottom: 4px;
-transition: all 0.4s ease;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 0.99;
+	letter-spacing: 0.8px;
+	color: var(--white-color);
+	padding-bottom: 4px;
+	transition: all 0.4s ease;
 }
 
 .site-header__link:hover {
@@ -156,3 +190,83 @@ transition: all 0.4s ease;
 .site-header__link:active {
 	opacity: 0.6;
 }
+
+/* Hero start */
+
+.main-content {
+}
+
+.hero {
+	padding-top: 291px;
+	padding-bottom: 310px;
+	background-image: url(../images/hero/Rectangle.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero__container {
+	display: flex;
+	align-items: center;
+}
+.hero__info {
+	max-width: 666px;
+	width: 100%;
+	margin-right: 20px;
+}
+
+.hero__info-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 31px;
+}
+
+.hero__info-title3 {
+	font-weight: 400;
+	font-size: 140px;
+	line-height: 180px;
+	letter-spacing: 0%;
+	color: rgba(255, 255, 255, 0.13);
+	margin-right: 25px;
+}
+
+.hero__info-line {
+	width: 3px;
+	height: 130px;
+	background-color: var(--light-blue);
+	margin-right: 25px;
+}
+
+.hero__info-title {
+font-family: var(--title-fontFamily);
+font-weight: 400;
+font-size: 50px;
+line-height: 110px;
+letter-spacing: 0%;
+}
+
+.hero__text{
+	margin-bottom: 59px;
+}
+
+.hero__info-title span{
+	color: var(--light-blue);
+}
+
+.hero__img {
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 31px;
+	bottom: 129px;
+}
+
+.hero__bg{
+	position: absolute;
+	top: 796px;
+	left: 0;
+}
+
+/* hero end */
